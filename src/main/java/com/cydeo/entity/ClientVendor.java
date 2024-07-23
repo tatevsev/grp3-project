@@ -7,3 +7,4 @@ import javax.persistence.Entity;
 @Entity
 public class ClientVendor extends BaseEntity {
 }
+
