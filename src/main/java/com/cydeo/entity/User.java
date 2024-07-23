@@ -1,12 +1,14 @@
 package com.cydeo.entity;
 
 import com.cydeo.entity.common.BaseEntity;
-import lombok.Getter;
+import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
+
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
@@ -15,32 +17,24 @@ import javax.persistence.Table;
 @Setter
 @NoArgsConstructor
 @Table(name = "users")
+@AllArgsConstructor
+@EqualsAndHashCode(callSuper = false)
 public class User extends BaseEntity {
 
-
-    private int number;
-
-    private String userName;
+    @Column(name = "username", unique = true)
+    private String username;
+    @Column(name = "password")
     private String password;
-
-    private String firstName;
-    private String lastName;
-
-    private long phone;
-
+    @Column(name = "firstname")
+    private String firstname;
+    @Column(name = "lastname")
+    private String lastname;
+    @Column(name = "phone")
+    private String phone;
+    @Column(name = "enabled")
+    private Boolean enabled;
     @ManyToOne
-    @JoinColumn(name = "role_id")
     private Role role;
-
     @ManyToOne
-    @JoinColumn(name = "company_id")
     private Company company;
-
-
-
-
-
-
-
-
 }
