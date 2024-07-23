@@ -10,5 +10,9 @@ public interface CompanyService {
 
     CompanyDto findById(Long id);
 
+    void create(CompanyDto dto);
+
+    void update(CompanyDto dto);
+
 
 }
