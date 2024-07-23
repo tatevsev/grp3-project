@@ -5,10 +5,14 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@NoArgsConstructor
-@EqualsAndHashCode
+import lombok.*;
+
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode
+
 public class UserDto {
 
     private Long id;
@@ -37,4 +41,5 @@ public class UserDto {
         this.company = company;
         this.isOnlyAdmin = role.getDescription().equalsIgnoreCase("admin");
     }
+
 }

@@ -29,5 +29,4 @@ public class Company extends BaseEntity {
     @JoinColumn(name = "address_id")
     private Address address;
 
-
 }
