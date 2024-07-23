@@ -8,13 +8,13 @@ import lombok.Setter;
 
 import javax.persistence.*;
 
-@Entity
+
 @Getter
 @Setter
 @NoArgsConstructor
-@Table(name = "roles")
+@Entity
+@Table(name = "companies")
 public class Company extends BaseEntity {
-
 
     @Column(unique = true)
     private String title;
@@ -28,4 +28,5 @@ public class Company extends BaseEntity {
     @OneToOne
     @JoinColumn(name = "address_id")
     private Address address;
+
 }
