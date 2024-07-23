@@ -7,5 +7,5 @@ import java.util.List;
 public interface ClientVendorService {
     List<ClientVendorDto>listAllClientVendors();
 
-    ClientVendorDto findByClientVendorName(String name);
+    ClientVendorDto findById(Long id);
 }

@@ -32,7 +32,9 @@ public class ClientVendorServiceImpl implements ClientVendorService {
     }
 
     @Override
-    public ClientVendorDto findByClientVendorName(String name) {
-        return clientVendorMapper.convertToDto(clientVendorRepository.findByClientVendorName(name));
+    public ClientVendorDto findById(Long id) {
+        return clientVendorMapper.convertToDto(clientVendorRepository.findById(id).get());
     }
+
+
 }
