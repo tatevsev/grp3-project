@@ -13,6 +13,7 @@ import javax.persistence.*;
 @Table(name = "products")
 public class Product extends BaseEntity {
 
+   
    private String name;
 
    private int quantityInStock;
