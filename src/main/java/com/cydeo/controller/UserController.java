@@ -1,7 +1,6 @@
 package com.cydeo.controller;
 
 import com.cydeo.service.UserService;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-@RequestMapping("/user")
+@RequestMapping("/users")
 public class UserController {
 
 
@@ -20,13 +19,10 @@ public class UserController {
     }
 
     @GetMapping("/list")
-    public String listAllUsers(Model model){
-        model.addAttribute("users",userService.listAllUsers());
+    public String listAllUsers(Model model) {
+        model.addAttribute("users", userService.listAllUsers());
         return "/user/user-list";
     }
-
-
-
 
 
 }
