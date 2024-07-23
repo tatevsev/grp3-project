@@ -8,6 +8,8 @@ public interface CompanyService {
 
     List<CompanyDto> listAllCompanies();
 
+    List<CompanyDto>findAllExcludingCompanyWithIdAndSorted(Long id);
+
     CompanyDto findById(Long id);
 
     void create(CompanyDto dto);
