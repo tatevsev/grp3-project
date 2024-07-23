@@ -1,6 +1,5 @@
 package com.cydeo.dto;
 
-import com.cydeo.entity.Invoice;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
