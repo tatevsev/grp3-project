@@ -37,3 +37,4 @@ public class ClientVendor extends BaseEntity {
 
 
 }
+
