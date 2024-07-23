@@ -1,43 +1,29 @@
---insert into addresses(insert_date_time, insert_user_id, is_deleted, last_update_date_time, last_update_user_id,
---                      address_line1, address_line2, city, state, country, zip_code)
---values ('2024 - 04 - 15 00:00:00', 1, false, '2024 - 04 - 15 00:00:00', 1,
---        '7925 Jones Branch Dr, #3300 ', 'Tysons', 'Virginia', 'VA', 'United States', '22102 - 1234 '),
---       ('2024 - 04 - 15 00:00:00', 1, false, '2024 - 04 - 15 00:00:00', 1,
---        'Future Street', 'Times Square', 'Atlanta', 'Georgia', 'United States', '30310 - 4321 '),
---       ('2024 - 04 - 15 00:00:00', 1, false, '2024 - 04 - 15 00:00:00'', 1,
---        'North Street, 'Circle Square', 'San Francisco', 'California', 'United States', '94117 - 8546 '),
---       ('2024 - 04 - 15 00:00:00', 1, false, '2024 - 04 - 15 00:00:00', 1,
---        'West Street', 'Triangle Square, ''Los Angeles', 'California', 'United States', '90002 - 5214' ),
---       ('2024 - 04 - 15 00:00:00', 1, false, '2024 - 04 - 15 00:00:00', 1,
---        'East Street', 'Cube Squar ', 'Los Angeles', 'California', 'United States ', '90004 - 8426 '),
---       ('2024 - 04 - 15 00:00:00', 1, false, '2024 - 04 - 15 00:00:00', 1,
---        'South Street ', 'Times Square ', 'Los Angeles ', 'California', 'United States ', '90004 - 6985 '),
---       ('2024 - 04 - 15 00:00:00', 1, false, '2024 - 04 - 15 00:00:00', 1,
---        'SouthWest Street', 'Puzzle Square', 'Los Angeles', 'California', 'United States', '90002 - 8989 '),
---       ('2024 - 04 - 15 00:00:00', 1, false, '2024 - 04 - 15 00:00:00', 1,
---        'OwerWest Street', 'Android Square', 'Phoneix', 'Arizona', 'United States', '85034 - 8989 ');
+insert into addresses(insert_date_time, insert_user_id, is_deleted, last_update_date_time, last_update_user_id, address_line1, address_line2, city, state, country, zip_code)
+values
+    ('2024-04-15 00:00:00', 1, false, '2024-04-15 00:00:00', 1, '7925 Jones Branch Dr, #3300', 'Tysons', 'Virginia', 'VA', 'United States', '22102-1234'),
+    ('2024-04-15 00:00:00', 1, false, '2024-04-15 00:00:00', 1, 'Future Street', 'Times Square', 'Atlanta', 'Georgia', 'United States', '30310-4321'),
+    ('2024-04-15 00:00:00', 1, false, '2024-04-15 00:00:00', 1, 'North Street', 'Circle Square', 'San Francisco', 'California', 'United States', '94117-8546'),
+    ('2024-04-15 00:00:00', 1, false, '2024-04-15 00:00:00', 1, 'West Street', 'Triangle Square', 'Los Angeles', 'California', 'United States', '90002-5214'),
+    ('2024-04-15 00:00:00', 1, false, '2024-04-15 00:00:00', 1, 'East Street', 'Cube Square', 'Los Angeles', 'California', 'United States', '90004-8426'),
+    ('2024-04-15 00:00:00', 1, false, '2024-04-15 00:00:00', 1, 'South Street', 'Times Square', 'Los Angeles', 'California', 'United States', '90004-6985'),
+    ('2024-04-15 00:00:00', 1, false, '2024-04-15 00:00:00', 1, 'SouthWest Street', 'Puzzle Square', 'Los Angeles', 'California', 'United States', '90002-8989'),
+    ('2024-04-15 00:00:00', 1, false, '2024-04-15 00:00:00', 1, 'OwerWest Street', 'Android Square', 'Phoenix', 'Arizona', 'United States', '85034-8989');
 
-insert into companies(insert_date_time, insert_user_id, is_deleted, last_update_date_time, last_update_user_id,
-                       title, phone, website, address_id, company_status)
- values ('2024-04-15 00:00:00', 1, false, '2024-04-15 00:00:00', 1,
-         'CYDEO', '+1 (652) 852-8888', 'https://www.cydeo.com', 1, 'ACTIVE'),
-        ('2024-04-15 00:00:00', 1, false, '2024-04-15 00:00:00', 1,
-         'Green Tech', '+1 (652) 852-3246', 'https://www.greentech.com', 2, 'ACTIVE'),
-        ('2024-04-15 00:00:00', 1, false, '2024-04-15 00:00:00', 1,
-         'Blue Tech', '+1 (215) 654-5268', 'https://www.bluetech.com', 3, 'ACTIVE'),
-        ('2024-04-15 00:00:00', 1, false, '2024-04-15 00:00:00', 1,
-         'Red Tech', '+1 (215) 846-2642', 'https://www.redtech.com', 4, 'PASSIVE'),
-        ('2024-04-15 00:00:00', 1, false, '2024-04-15 00:00:00', 1,
-         'Orange Tech', '+1 (215) 846-4568', 'https://www.orangetech.com', 5, 'PASSIVE'),
-        ('2024-04-15 00:00:00', 1, false, '2024-04-15 00:00:00', 1,
-         'Active Tech', '+1 (215) 245-3687', 'https://www.activetech.com', 6, 'PASSIVE');
+insert into companies(insert_date_time, insert_user_id, is_deleted, last_update_date_time, last_update_user_id, title, phone, website, address_id, company_status)
+values
+    ('2024-04-15 00:00:00', 1, false, '2024-04-15 00:00:00', 1, 'CYDEO', '+1 (652) 852-8888', 'https://www.cydeo.com', 1, 'ACTIVE'),
+    ('2024-04-15 00:00:00', 1, false, '2024-04-15 00:00:00', 1, 'Green Tech', '+1 (652) 852-3246', 'https://www.greentech.com', 2, 'ACTIVE'),
+    ('2024-04-15 00:00:00', 1, false, '2024-04-15 00:00:00', 1, 'Blue Tech', '+1 (215) 654-5268', 'https://www.bluetech.com', 3, 'ACTIVE'),
+    ('2024-04-15 00:00:00', 1, false, '2024-04-15 00:00:00', 1, 'Red Tech', '+1 (215) 846-2642', 'https://www.redtech.com', 4, 'PASSIVE'),
+    ('2024-04-15 00:00:00', 1, false, '2024-04-15 00:00:00', 1, 'Orange Tech', '+1 (215) 846-4568', 'https://www.orangetech.com', 5, 'PASSIVE'),
+    ('2024-04-15 00:00:00', 1, false, '2024-04-15 00:00:00', 1, 'Active Tech', '+1 (215) 245-3687', 'https://www.activetech.com', 6, 'PASSIVE');
 
--- insert into roles(insert_date_time, insert_user_id, is_deleted, last_update_date_time,
---                   last_update_user_id, description)
--- values ('2024-04-09 00:00:00', 1, false, '2024-04-09 00:00:00', 1, 'Root User'),
---        ('2024-04-09 00:00:00', 1, false, '2024-04-09 00:00:00', 1, 'Admin'),
---        ('2024-04-09 00:00:00', 1, false, '2024-04-09 00:00:00', 1, 'Manager'),
---        ('2024-04-09 00:00:00', 1, false, '2024-04-09 00:00:00', 1, 'Employee');
+insert into roles(insert_date_time, insert_user_id, is_deleted, last_update_date_time,
+                  last_update_user_id, description)
+values ('2024-04-09 00:00:00', 1, false, '2024-04-09 00:00:00', 1, 'Root User'),
+       ('2024-04-09 00:00:00', 1, false, '2024-04-09 00:00:00', 1, 'Admin'),
+       ('2024-04-09 00:00:00', 1, false, '2024-04-09 00:00:00', 1, 'Manager'),
+       ('2024-04-09 00:00:00', 1, false, '2024-04-09 00:00:00', 1, 'Employee');
 --
 -- insert into users(insert_date_time, insert_user_id, is_deleted, last_update_date_time, last_update_user_id,
 --                   username, password, firstname, lastname, phone, role_id, company_id, enabled)
