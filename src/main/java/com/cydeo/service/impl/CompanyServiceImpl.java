@@ -34,6 +34,14 @@ public class CompanyServiceImpl implements CompanyService {
         return companyList.stream().map(company -> mapperUtil.convert(company, new CompanyDto())).collect(Collectors.toList());
     }
 
+
+
+    @Override
+    public List<CompanyDto> findAllExcludingCompanyWithIdAndSorted(Long id) {
+        List<Company>sortedCompanyList=companyRepository.findAllExcludingCompanyWithIdAndSorted(id);
+        return sortedCompanyList.stream().map(company -> mapperUtil.convert(company,new CompanyDto())).collect(Collectors.toList());
+    }
+
     @Override
     public CompanyDto findById(Long id) {
         return companyMapper.convertToDto(companyRepository.findById(id).get());

@@ -22,7 +22,7 @@ public class CompanyController {
 
     @GetMapping("/list")
     public String listAllCompanies(Model model){
-        model.addAttribute("companies",companyService.listAllCompanies());
+        model.addAttribute("companies",companyService.findAllExcludingCompanyWithIdAndSorted(1L));
         return "/company/company-list";
 
     }
@@ -38,7 +38,7 @@ public class CompanyController {
 
     @PostMapping("/create")
 
-    public String insertCompany(@ModelAttribute("title") CompanyDto company,Model model){
+    public String insertCompany(@ModelAttribute("newCompany") CompanyDto company,Model model){
 
         companyService.create(company);
         model.addAttribute("newCompany",new CompanyDto());
