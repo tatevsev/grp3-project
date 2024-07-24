@@ -20,7 +20,7 @@ public class ProductDtoConverter implements Converter<String, ProductDto> {
 
     @Override
     public ProductDto convert(String source) {
-        if (source == null || source.equals("")) {
+        if (source == null || source.isEmpty()) {
             return null;
         }
 
