@@ -66,14 +66,15 @@
                                                                           title="Can not be deleted! This product has invoice(s).">
                                                                         <button
                                                                                 class="btn btn-danger mb-2 ml-2 mb-sm-0 mr-sm-2"
-                                                                                style="pointer-events: none;" disabled>Delete
+                                                                                 >Delete
                                                                         </button>
                                                                     </span>
                                                                     <a th:unless="${product.hasInvoiceProduct}"
                                                                        th:href="@{/products/delete/{id}(id=${product.getId()})}"
                                                                        type="button">
-                                                                        <button class="btn btn-danger mb-2 ml-2 mb-sm-0 mr-sm-2">
-                                                                            Delete
+                                                                        <button
+                                                                                class="btn btn-danger mb-2 ml-2 mb-sm-0 mr-sm-2"
+                                                                        >Delete
                                                                         </button>
                                                                     </a>
                                                                 </td>

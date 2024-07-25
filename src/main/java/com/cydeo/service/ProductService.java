@@ -9,6 +9,6 @@ public interface ProductService {
     void create(ProductDto product);
     void delete(Long id);
     void edit(ProductDto product);
-    List<ProductDto> getAllProductDetails();
+   // List<ProductDto> getAllProductDetails();
 
 }

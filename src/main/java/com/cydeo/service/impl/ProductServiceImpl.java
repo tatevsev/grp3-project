@@ -71,12 +71,12 @@ public class ProductServiceImpl implements ProductService {
 
     }
 
-    @Override
-    public List<ProductDto> getAllProductDetails() {
-
-
-        return List.of();
-    }
+//    @Override
+//    public List<ProductDto> getAllProductDetails() {
+//
+//
+//        return List.of();
+//    }
 
     //need help and keycloack here
 

@@ -1,10 +1,11 @@
 package com.cydeo.dto;
 
 import com.cydeo.enums.ProductUnit;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
+@AllArgsConstructor
+@Getter
+@Setter
 @NoArgsConstructor
 @Data
 @EqualsAndHashCode
@@ -17,16 +18,6 @@ public class ProductDto {
     private ProductUnit productUnit;
     private CategoryDto category;
     private boolean hasProduct;
+    private boolean hasInvoiceProduct;
 
-    public ProductDto(Long id, String name, Integer quantityInStock,
-                      Integer lowLimitAlert, ProductUnit productUnit,
-                      CategoryDto category, boolean hasProduct) {
-        this.id = id;
-        this.name = name;
-        this.quantityInStock = quantityInStock;
-        this.lowLimitAlert = lowLimitAlert;
-        this.productUnit = productUnit;
-        this.category = category;
-        this.hasProduct = hasProduct;
-    }
 }
